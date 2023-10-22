@@ -28,7 +28,8 @@ export const EXAMPLE_STYLE = {
 export const FLAG_STYLE = {
     x: px(DEVICE_WIDTH / 2) - (40 / 2),
     y: px(DEVICE_HEIGHT - 40),
-    src: 'flag_it_40px.png'
+    src: 'flag_it_40px.png',
+    angle: 0,
 };
 
 export const BUTTON_NEXT_STYLE = {

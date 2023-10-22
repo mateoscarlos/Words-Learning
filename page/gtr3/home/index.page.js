@@ -17,6 +17,10 @@ Page({
     },
 
     build() {
+
+        // TODO: Check it out
+        scrollBar = hmUI.createWidget(hmUI.widget.PAGE_SCROLLBAR)
+
         let index = Math.floor(Math.random() * italian.length)
         let new_index
 
@@ -30,9 +34,14 @@ Page({
             text: italian[index],
         });
         // Language widget
-        hmUI.createWidget(hmUI.widget.IMG, {
+        flag = hmUI.createWidget(hmUI.widget.IMG, {
             ...FLAG_STYLE,
         });
+        // flag.addEventListener(hmUI.event.CLICK_DOWN, (info) => {
+        //     flag.setProperty(hmUI.prop.MORE, {
+        //         angle: flag.getProperty(hmUI.flag.ANGLE) + 2
+        //     })
+        // });
 
         const nextButton = hmUI.createWidget(hmUI.widget.BUTTON, {
             ...BUTTON_NEXT_STYLE,

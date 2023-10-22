@@ -18,7 +18,7 @@ export const SETTINGS_TITLE = {
 // ____ SETTINGS OPT ___________________________
 // ________ Main _______________________________
 const SETTINGS_OPT = {
-    x: px(100),
+    x: px(120),
     y: DEVICE_HEIGHT/2 - 30,
     w: DEVICE_WIDTH,
     h: px(55),
@@ -79,7 +79,7 @@ export const EXTRA = {
 // ____ SETTINGS IMG ___________________________
 // ________ Main _______________________________
 const IMG_MAIN_SETTING = {
-    x: SETTINGS_OPT.x - 64,
+    x: SETTINGS_OPT.x - 60,
     w: 45,
     h: 45,
     pos_x: 0,
