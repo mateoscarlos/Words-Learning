@@ -1,4 +1,4 @@
-# WordWatch - Language Learning On Your Wrist!
+# Words - Language Learning On Your Wrist!
 
 ## Overview
 Introducing **Words**, the smartwatch app designed to boost your vocabulary on the go. Every time you open the app, a fresh word from your target language appears along with its translation. It's a seamless way to integrate language learning into your daily routine.
