@@ -16,7 +16,7 @@ export const ORIGINAL_STYLE = {
 
 export const EXAMPLE_STYLE = {
     x: px(42),
-    y: px(DEVICE_HEIGHT + 170),
+    y: px(DEVICE_HEIGHT + 160),
     w: DEVICE_WIDTH - px(42) * 2,
     h: px(250),
     color: 0xffffff,
@@ -36,8 +36,8 @@ export const BUTTON_NEXT_STYLE = {
     y: (DEVICE_HEIGHT / 2) - (64 / 2),
     w: -1,
     h: -1,
-    normal_src: "source_button.png",
-    press_src: "source_settings.png",
+    normal_src: "normal_next.png",
+    press_src: "press_next.png",
 };
 
 export const BUTTON_SETTINGS_STYLE = {
@@ -45,5 +45,6 @@ export const BUTTON_SETTINGS_STYLE = {
     y: px(2*DEVICE_HEIGHT - 64),
     w: -1,
     h: -1,
-    normal_src: "source_settings.png",
+    normal_src: "normal_settings.png",
+    press_src: "press_settings.png",
 };
