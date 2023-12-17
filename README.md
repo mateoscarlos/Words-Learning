@@ -14,16 +14,9 @@ Introducing **Words**, the smartwatch app designed to boost your vocabulary on t
 - **Customizable**: Choose your native language, target language, and difficulty level.
 
 ## Interface
-<div style="display:flex;">
-  <div style="flex:1;padding:5px;">
-    <img src="img/main_interface_screenshot.png" alt="Main Interface of the Words App" width="40%">
-    <p style="text-align:center;">Main Display</p>
-  </div>
-  <div style="flex:1;padding:5px;">
-    <img src="img/example_interface_screenshot.png" alt="Settings Menu of the Words App" width="40%">
-    <p style="text-align:center;">Example Display</p>
-  </div>
-</div>
+![Main Display](img/main_interface_screenshot.png)
+![Example Display](img/example_interface_screenshot.png)
+
 
 
 
