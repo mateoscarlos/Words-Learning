@@ -8,15 +8,15 @@
       "code": 2,
       "name": "1.0.1"
     },
-    "icon": "circle.png",
+    "icon": "icon.png",
     "vender": "zepp",
     "description": "Words learning"
   },
   "permissions": [],
   "runtime": {
     "apiVersion": {
-      "compatible": "2.0.0",
-      "target": "2.0.1",
+      "compatible": "3.0.0",
+      "target": "3.0.0",
       "minVersion": "1.0.0"
     }
   },
@@ -47,7 +47,7 @@
         "page": {
           "pages": [
             "page/gtr3/home/index.page",
-            "page/gtr3/home/example.page"  
+            "page/gtr3/home/settings.page"
           ]
         }
       },

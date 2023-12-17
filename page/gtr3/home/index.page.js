@@ -1,4 +1,5 @@
-import { ORIGINAL_STYLE, EMOJI_STYLE, EXAMPLE_STYLE, BUTTON_NEXT_STYLE } from "./index.style";
+import { ORIGINAL_STYLE, FLAG_STYLE, EXAMPLE_STYLE, BUTTON_NEXT_STYLE, BUTTON_SETTINGS_STYLE } from "./index.style";
+// import { createWidget, widget } from '@zos/ui'
 import { italian, it_examples } from "./dict"
 
 
@@ -16,10 +17,15 @@ Page({
     },
 
     build() {
+
+        // TODO: Check it out
+        scrollBar = hmUI.createWidget(hmUI.widget.PAGE_SCROLLBAR)
+
         let index = Math.floor(Math.random() * italian.length)
         let new_index
 
         hmUI.setScrollView(true, px(454), 2, true)
+        // const scrollBar = createWidget(widget.PAGE_SCROLLBAR)
 
         // ___PAGE 1___________________________
         // Word widget
@@ -27,15 +33,17 @@ Page({
             ...ORIGINAL_STYLE,
             text: italian[index],
         });
-        // Local widget
-        // hmUI.createWidget(hmUI.widget.TEXT, {
-        //   ...EMOJI_STYLE,
-        // });
-        hmUI.createWidget(hmUI.widget.IMG, {
-            ...EMOJI_STYLE,
+        // Language widget
+        flag = hmUI.createWidget(hmUI.widget.IMG, {
+            ...FLAG_STYLE,
         });
+        // flag.addEventListener(hmUI.event.CLICK_DOWN, (info) => {
+        //     flag.setProperty(hmUI.prop.MORE, {
+        //         angle: flag.getProperty(hmUI.flag.ANGLE) + 2
+        //     })
+        // });
 
-        const button = hmUI.createWidget(hmUI.widget.BUTTON, {
+        const nextButton = hmUI.createWidget(hmUI.widget.BUTTON, {
             ...BUTTON_NEXT_STYLE,
             click_func: () => {
                 do {
@@ -49,11 +57,8 @@ Page({
                 example.setProperty(hmUI.prop.MORE, {
                     text: it_examples[index]
                 })
-                // hmApp.reloadPage({ url: 'page/gtr3/home/index.page' })
-                // hmApp.gotoPage({ url: 'page/gtr3/home/example.page' })
             }
         })
-
 
         // ___PAGE 2___________________________
         // Example widget
@@ -62,8 +67,12 @@ Page({
             text: it_examples[index]
         });
 
-
-
+        const settingsButton = hmUI.createWidget(hmUI.widget.BUTTON, {
+            ...BUTTON_SETTINGS_STYLE,
+            click_func: () => {
+                hmApp.gotoPage({ url: 'page/gtr3/home/settings.page' })           
+            }
+        })
 
     },
 
