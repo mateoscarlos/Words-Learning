@@ -13,6 +13,11 @@ Introducing **Words**, the smartwatch app designed to boost your vocabulary on t
 
 - **Customizable**: Choose your native language, target language, and difficulty level.
 
+## Interface
+![Main Display](img/main_interface_screenshot.png)
+![Example Display](img/example_interface_screenshot.png)
+
+
 ## Coming Soon
 
 While Words is currently in development for Zepp OS, plans are underway to expand its availability to other operating systems such as WatchOS and WearOS.
